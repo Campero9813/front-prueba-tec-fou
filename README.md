@@ -8,6 +8,10 @@ Paso 1: Descargamos el proyecto
 
 Paso 2: Cambiamos a la rama 'master'
 
+```bash
+git checkout master
+```
+
 Paso 3: Instalamos Dependencias de Node
 
 ```bash
