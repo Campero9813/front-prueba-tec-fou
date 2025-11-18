@@ -24,14 +24,12 @@ ng serve -o
 ```
 
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
 ## Running tests
 
 Puedes ejecutar este comando para visualiza runas pruebas sencillas de los componentes creados como, el service, el input-component, y el app principal
 
 ```bash
-ng test
+npm run test
 ```
 
 
