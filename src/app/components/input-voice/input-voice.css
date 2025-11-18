@@ -72,6 +72,18 @@ h1 {
     width: 20px;
 }
 
+.reload-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.reload-btn img {
+    width: 20px;
+    filter: invert(100%);
+}
+
 .char-count {
     font-size: 12px;
     color: #999;

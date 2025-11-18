@@ -28,9 +28,12 @@
             <button class="mic-btn" (click)="startRecognition()">
                 <img src="assets/img/micro_blanco.png" alt="microfono">
             </button>
+            <button class="reload-btn" (click)="clearInput()">
+                <img src="assets/img/reload.png" alt="reintentar">
+            </button>
         </div>
 
-        <p class="char-count">0/15 caracteres</p>
+        <p class="char-count">{{name.length}}/15 caracteres</p>
 
           <button class="send-btn" (click)="sendToEncrypt()">
             Prueba para encriptar (Comenzar)

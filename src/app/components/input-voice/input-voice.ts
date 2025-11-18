@@ -93,4 +93,8 @@ export class InputVoice {
       }
     })
   }
+
+  clearInput(){
+    this.name = '';
+  }
 }
