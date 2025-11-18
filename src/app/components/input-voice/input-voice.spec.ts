@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { InputVoice } from './input-voice';
 
@@ -8,7 +9,8 @@ describe('InputVoice', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [InputVoice]
+      declarations: [InputVoice],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
 
