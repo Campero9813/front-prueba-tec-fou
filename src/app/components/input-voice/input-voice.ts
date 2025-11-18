@@ -69,13 +69,28 @@ export class InputVoice {
   }
 
   sendToEncrypt() {
-    if (!this.name.trim()) return;
+    console.log("Iniciando encriptado: ");
+
+    if ( !this.name || !this.name.trim()){
+      console.log("No hay nombre para encriptar");
+      return
+    }
+    console.log("Texto original: ", this.name)
 
     this.encrypt.encryptText(this.name).subscribe({
       next: (res) => {
-        this.encrypted = res.data;
+        console.log("Texto original enviado al api: ", res.original)
+        console.log("Respuesta de la api: ", res)
+        if (res) {
+        console.log("Texto encriptado", res.encrypted)
+        this.encrypted = res.encrypted;  
+        }else{
+          console.log("La api no regreso 'data', devolvio: ", res);
+        }
       },
-      error: (err) => console.error(err)
+      error: (err) => {
+        console.error("Error al llamar la api: ", err)
+      }
     })
   }
 }
